@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Booking | Dalxiis Soomaaliya</title>
+  <style>
+    body {font-family: Arial, sans-serif; margin:0; background:#e0f2f1;}
+    header {background:#00695c; color:white; text-align:center; padding:20px;}
+    nav {background:#004d40; text-align:center; padding:10px;}
+    nav a {color:#e0f2f1; text-decoration:none; margin:0 10px; font-weight:bold;}
+    nav a:hover {color:yellow;}
+    main {padding:20px;}
+    form {max-width:500px; margin:auto; background:white; padding:20px; border-radius:10px;}
+    fieldset {border:2px solid #004d40; border-radius:5px; margin-bottom:15px;}
+    legend {font-weight:bold;}
+    label {display:block; margin-top:10px;}
+    input[type="text"], select, textarea {width:100%; padding:8px; margin-top:5px;}
+    input[type="radio"], input[type="checkbox"] {margin-right:10px;}
+    button {background:#00695c; color:white; padding:10px; border:none; border-radius:5px; margin-top:10px; cursor:pointer;}
+    button:hover {background:#004d40;}
+    footer {background:#00695c; color:white; text-align:center; padding:10px; margin-top:30px;}
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Dalxiis Soomaaliya - Booking</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="booking.html">Booking</a>
+    <a href="help.html">Help</a>
+    <a href="about.html">About</a>
+  </nav>
+
+  <main>
+    <h2>Buuxi Foomka Booking</h2>
+    <form>
+      <fieldset>
+        <legend>Macluumaadkaaga</legend>
+        <label for="name">Magacaaga:</label>
+        <input type="text" id="name" name="name" required placeholder="Magaca oo buuxa">
+
+        <label for="city">Magaalo:</label>
+        <select id="city" name="city" required>
+          <option value="">Dooro Magaalo</option>
+          <option value="Mogadishu">Mogadishu</option>
+          <option value="Hargeisa">Hargeisa</option>
+          <option value="Baidoa">Baidoa</option>
+        </select>
+
+        <label>Jinsiga:</label>
+        <input type="radio" id="male" name="gender" value="Male" required><label for="male">Lab</label>
+        <input type="radio" id="female" name="gender" value="Female"><label for="female">Dheddig</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Dooro Adeegyada</legend>
+        <input type="checkbox" id="guide" name="service" value="Guide"><label for="guide">Hag Dalxiis</label>
+        <input type="checkbox" id="transport" name="service" value="Transport"><label for="transport">Gaadiid</label>
+      </fieldset>
+
+      <label for="comments">Faallo:</label>
+      <textarea id="comments" name="comments" rows="4" placeholder="Wax faahfaahin ah halkan ku qor"></textarea>
+
+      <button type="submit">Dir Booking</button>
+    </form>
+  </main>
+
+  <footer>
+    &copy; 2025 Dalxiis Soomaaliya.
+  </footer>
+
+</body>
+</html>
